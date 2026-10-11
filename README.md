@@ -134,7 +134,7 @@ All 31 test cases verify:
 
 ---
 
-## 5. Deployment Guide
+## 5. Deployment Guide -- At Render
 
 ### Docker Deployment
 Run using Docker Compose:
@@ -143,8 +143,9 @@ docker-compose up --build -d
 ```
 Access at `http://localhost:8000`. Persistent database and vector indexes are stored in the `insightrag-storage` volume.
 
-### Hugging Face Spaces Deployment
-1. Create a new Space on Hugging Face with **Docker** SDK.
-2. Push this repository to your Space repository.
-3. Hugging Face Spaces will build the multi-stage Dockerfile and serve the full application on port 7860/8000.
+It is designed to reduce hallucination risks by separating calculated database facts from retrieved document evidence, validating SQL queries before execution, and providing an automated Evaluation Lab for quantitative assessment.
+
+Live Demo: InsightRAG on Render
+
+API Documentation: FastAPI Swagger UI
 
