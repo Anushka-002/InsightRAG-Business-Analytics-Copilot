@@ -148,16 +148,3 @@ Access at `http://localhost:8000`. Persistent database and vector indexes are st
 2. Push this repository to your Space repository.
 3. Hugging Face Spaces will build the multi-stage Dockerfile and serve the full application on port 7860/8000.
 
----
-
-## 6. Interview Portfolio & Defense Guide
-
-### For Data Analyst Interviews
-- **Defending SQL Guardrails**: Explain why regex is insufficient for SQL security. Detail how AST tokenization inspects statement syntax trees to enforce read-only execution, prevent privilege escalation, and enforce limit clauses.
-- **Handling Data Inconsistencies**: Demonstrate how the Data Explorer inspects distributions, null percentages, and data quality warnings rather than silently dropping or fabricating rows.
-- **Business Ground Truth Reconciliation**: Show how the system reconciles numbers (e.g. Q2 margin dropping to 35.8%) with narrative explanations (Mid-Market discounting and Cyber Security cloud vendor renegotiations).
-
-### For AI/ML & LLM Engineer Interviews
-- **Mitigating Hallucinations in Financial AI**: Discuss why deterministic SQL calculation is strictly separated from LLM generation. Critical arithmetic is handled by relational engines; the LLM synthesizes and explains verified outputs.
-- **Chunking & Retrieval Engineering**: Explain the tradeoff between small chunk sizes (high citation precision) and large chunk sizes (preserving multi-paragraph narrative context). Explain why hybrid dense-lexical retrieval outperforms naive embedding search for domain-specific acronyms.
-- **Quantitative Evaluation**: Discuss why Recall@K and Citation Support Fidelity are more meaningful metrics than subjective LLM judgements for enterprise analytics.
