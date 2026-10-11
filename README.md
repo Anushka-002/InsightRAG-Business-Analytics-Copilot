@@ -145,7 +145,7 @@ Access at `http://localhost:8000`. Persistent database and vector indexes are st
 
 It is designed to reduce hallucination risks by separating calculated database facts from retrieved document evidence, validating SQL queries before execution, and providing an automated Evaluation Lab for quantitative assessment.
 
-Live Demo: InsightRAG on Render
+Live Demo: [InsightRAG on Render] (https://insightrag-business-analytics-copilot.onrender.com/)
 
 API Documentation: FastAPI Swagger UI
 
