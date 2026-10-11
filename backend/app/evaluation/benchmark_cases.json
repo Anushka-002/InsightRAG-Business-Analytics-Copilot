@@ -1,0 +1,74 @@
+[
+  {
+    "id": "CASE-SQL-01",
+    "category": "STRUCTURED_SQL",
+    "question": "What was our total revenue?",
+    "expected_keywords": ["total_revenue", "sum(revenue)"],
+    "expected_doc": null,
+    "description": "Verifies deterministic summation of revenue."
+  },
+  {
+    "id": "CASE-SQL-02",
+    "category": "STRUCTURED_SQL",
+    "question": "Which product category has the lowest profit margin?",
+    "expected_keywords": ["product_category", "profit_margin_pct", "order by", "asc"],
+    "expected_doc": null,
+    "description": "Verifies category-level margin calculation and ascending sort."
+  },
+  {
+    "id": "CASE-SQL-03",
+    "category": "STRUCTURED_SQL",
+    "question": "How did quarterly revenue change over the year?",
+    "expected_keywords": ["quarter", "group by quarter"],
+    "expected_doc": null,
+    "description": "Verifies quarterly aggregation."
+  },
+  {
+    "id": "CASE-RAG-01",
+    "category": "UNSTRUCTURED_RAG",
+    "question": "What does the quarterly report say about the decline in profitability?",
+    "expected_keywords": ["discounting", "margin", "cyber security"],
+    "expected_doc": "Q2_FY2024_Financial_Performance_and_Margin_Analysis.txt",
+    "description": "Tests retrieval of Q2 root cause profitability analysis."
+  },
+  {
+    "id": "CASE-RAG-02",
+    "category": "UNSTRUCTURED_RAG",
+    "question": "What are the discount authorization approval tiers in the corporate policy?",
+    "expected_keywords": ["tier 1", "tier 2", "tier 3", "tier 4", "discount"],
+    "expected_doc": "Corporate_Discount_and_Pricing_Policy.txt",
+    "description": "Tests retrieval of discount governance tiers."
+  },
+  {
+    "id": "CASE-COMB-01",
+    "category": "COMBINED",
+    "question": "Which regions experienced declining sales, and what evidence supports this observation?",
+    "expected_keywords": ["south", "budget freeze", "revenue"],
+    "expected_doc": "Q3_FY2024_Regional_Sales_and_Market_Dynamics.txt",
+    "description": "Tests multi-source reconciliation: regional SQL data + Q3 regional headwinds report."
+  },
+  {
+    "id": "CASE-COMB-02",
+    "category": "COMBINED",
+    "question": "Compare the sales numbers with the explanations provided in the report for Q2 margin drop.",
+    "expected_keywords": ["mid-market", "discount", "margin", "q2"],
+    "expected_doc": "Q2_FY2024_Financial_Performance_and_Margin_Analysis.txt",
+    "description": "Tests numerical comparison against management discussion."
+  },
+  {
+    "id": "CASE-UNSUP-01",
+    "category": "UNSUPPORTED",
+    "question": "What is the employee stock option vesting schedule for engineers?",
+    "expected_keywords": [],
+    "expected_doc": null,
+    "description": "Verifies proper rejection of out-of-domain query without hallucination."
+  },
+  {
+    "id": "CASE-UNSUP-02",
+    "category": "UNSUPPORTED",
+    "question": "What were the competitor's patent filings in 2024?",
+    "expected_keywords": [],
+    "expected_doc": null,
+    "description": "Verifies proper rejection of competitor data not present in system."
+  }
+]

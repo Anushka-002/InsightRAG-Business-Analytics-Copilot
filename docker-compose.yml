@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  insightrag:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: insightrag-app
+    ports:
+      - "8000:8000"
+    environment:
+      - LLM_PROVIDER=demo
+      - SIMILARITY_THRESHOLD=0.10
+      - SQL_ROW_LIMIT=500
+    volumes:
+      - insightrag-storage:/app/backend/storage
+    restart: unless-stopped
+
+volumes:
+  insightrag-storage:
+    driver: local

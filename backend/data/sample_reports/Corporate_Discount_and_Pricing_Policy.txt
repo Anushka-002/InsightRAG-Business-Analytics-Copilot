@@ -1,0 +1,26 @@
+================================================================================
+APEX ENTERPRISE SYSTEMS INC.
+GLOBAL COMMERCIAL PRICING & DISCOUNTING POLICY GOVERNANCE (POL-2024-PR01)
+Effective Date: July 1, 2024
+Supersedes: POL-2022-PR04
+Scope: All Sales, Account Executives, Commercial Operations, and Finance Personnel
+================================================================================
+
+1. PURPOSE & PRINCIPLES
+This policy establishes mandatory governance rules for contract pricing, tier discounts, multi-year commitments, and margin protection thresholds across all commercial agreements.
+
+2. STANDARD AUTHORIZATION THRESHOLDS
+Every commercial contract must adhere to the following discount authorization matrix based on Annual Contract Value (ACV) and discount percentage:
+
+- Tier 1 (0.0% to 10.0% discount): Standard field sales discretion; requires Account Executive and Sales Manager sign-off.
+- Tier 2 (10.1% to 18.0% discount): Requires Regional Sales Director sign-off.
+- Tier 3 (18.1% to 25.0% discount): Requires Vice President of Sales and Commercial Finance Director approval.
+- Tier 4 (> 25.0% discount): Prohibited for standard accounts. Exceptions require joint written sign-off from the Chief Revenue Officer (CRO) and Chief Financial Officer (CFO).
+
+3. SPECIAL RULES BY PRODUCT CATEGORY
+- AI Developer Tools (NeuralKit Enterprise): Maximum allowable discount is strictly capped at 15% under all circumstances due to high GPU compute cost commitments.
+- Cloud Infrastructure: Discounts up to 20% require a minimum 36-month term commitment.
+- Bundled Deals: When Cyber Security and Business Analytics products are packaged together, aggregate package gross margin must exceed 38%.
+
+4. NON-COMPLIANCE & AUDIT PENALTIES
+Unapproved verbal or written discounting commitments will be voided. Sales representatives who execute unauthorized side letters or unapproved discounting forfeit commission eligibility on the affected transactions.
